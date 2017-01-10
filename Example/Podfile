@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HFAlert_Example' do
+  pod 'HFAlert', :path => '../'
+
+  target 'HFAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
