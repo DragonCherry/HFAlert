@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HFAlert'
-  s.version          = '0.9.0'
+  s.version          = '0.9.1'
   s.summary          = 'Simple and handy alert utility.'
 
 # This description is used to generate tags and improve search results.
