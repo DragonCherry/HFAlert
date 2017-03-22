@@ -74,12 +74,12 @@ open class HFAlert: NSObject {
         destructTitle: String? = nil,
         onDestruct: (() -> Void)? = nil) {
         
+        close(false)
+        
         self.parent = parent
         self.dismissHandler = onDismiss
         self.cancelHandler = onCancel
         self.destructHandler = onDestruct
-        
-        self.close(false)
         
         self.alertController = UIAlertController(title: title, message: message, preferredStyle: style)
         guard let alertController = self.alertController else {
